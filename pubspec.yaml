@@ -1,6 +1,6 @@
 name: google_map_location_picker_flutter
 description: This package for pick or search on google map.
-version: 2.0.5
+version: 0.0.1
 homepage: https://github.com/ahmad01213/google_map_location_picker_flutter
 publish_to: 'none'
 
