@@ -10,6 +10,11 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
+This is a fork based  https://github.com/ahmad01213/google_map_location_picker_flutter
+
+with added fields for address components.
+
+
 # google_map_location_picker_flutter
 <p>
   <img src="https://rc.urapp.site/picker_preview.gif" width=300 />
