@@ -1,21 +1,21 @@
 name: google_map_location_picker_flutter
 description: This package for pick or search on google map.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ahmad01213/google_map_location_picker_flutter
 publish_to: 'none'
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
+  sdk: ">=2.16.2 <3.1.3"
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
   google_maps_flutter: ^2.5.0
-  flutter_google_places: ^0.3.0
+#  flutter_google_places: ^0.3.0
   maps_toolkit: ^2.0.0
   google_maps_webservice: ^0.0.19
-  http: ^0.13.4
+  http: ^1.0.0
   uuid: ^3.0.6
 
 dev_dependencies:
