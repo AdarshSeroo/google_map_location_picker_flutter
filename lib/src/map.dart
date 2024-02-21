@@ -427,7 +427,7 @@ class _SearchPageState extends State<SearchPage> {
     String baseURL =
         'https://maps.googleapis.com/maps/api/place/autocomplete/json';
     String request =
-        '$baseURL?input=$input&key=${widget.apiKey}&sessiontoken=$_sessionToken&language=ar';
+        '$baseURL?input=$input&key=${widget.apiKey}&sessiontoken=$_sessionToken&language=${widget.language}';
     var response = await http.get(Uri.parse(request));
     if (response.statusCode == 200) {
       setState(() {
@@ -451,7 +451,7 @@ class _SearchPageState extends State<SearchPage> {
               controller: _controller,
               decoration: InputDecoration(
                 labelText: null,
-                hintText: "بحث",
+                hintText: "${widget.searchPlaceHolder}",
                 hintStyle: TextStyle(fontSize: 12),
                 prefixIcon: Icon(Icons.search),
                 suffixIcon: _controller.text.isEmpty
