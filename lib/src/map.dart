@@ -414,16 +414,16 @@ class _SearchPageState extends State<SearchPage> {
     });
   }
 
-  _onChanged() {
+  Future _onChanged() async {
     if (_sessionToken == null) {
       setState(() {
         _sessionToken = uuid.v4();
       });
     }
-    getSuggestion(_controller.text);
+    await getSuggestion(_controller.text);
   }
 
-  void getSuggestion(String input) async {
+  Future getSuggestion(String input) async {
     String baseURL =
         'https://maps.googleapis.com/maps/api/place/autocomplete/json';
     String request =
