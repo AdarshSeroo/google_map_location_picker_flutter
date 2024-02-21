@@ -424,11 +424,10 @@ class _SearchPageState extends State<SearchPage> {
   }
 
   Future getSuggestion(String input) async {
-    String baseURL =
-        'https://maps.googleapis.com/maps/api/place/autocomplete/json';
+    String baseURL = 'maps.googleapis.com/maps/api/place/autocomplete/json';
     String request =
         '$baseURL?input=$input&key=${widget.apiKey}&sessiontoken=$_sessionToken&language=${widget.language}';
-    var response = await http.get(Uri.parse(request));
+    var response = await http.get(Uri.https(request));
     if (response.statusCode == 200) {
       setState(() {
         _placeList = json.decode(response.body)['predictions'];
